@@ -1,5 +1,6 @@
 
-
+myform.addEventListener("submit", onsubmit)
+const msg = document.getElementById("alert")
 
 function enviarDatos() {     
     let usuarios = JSON.parse(localStorage.getItem("user")) || []; 
@@ -14,19 +15,26 @@ function enviarDatos() {
 }
 
 
+ function onsubmit(e) {
+     e.preventDefault();
+     if(nombre.value=== ""|| correo.value==="" || pwd1.value=== ""||
+      pwd2.value==="") {
+        msg.innerHTML= `<div class="alert alert-warning">
+        <strong>Cuidado</strong> Debes rellenar todos los campos.
+      </div>`;
+     } else if  (pwd1.value !== pwd2.value){
+       msg.innerHTML= `<div class="alert alert-danger">
+       <strong>Error!</strong> Contrasenas no coinciden.
+     </div>`
+     }
+     setTimeout(function(){
+         msg.innerHTML="";
+     },3000);
+     
+ }
 
+ function verifyPassword() {
+     if (pwd1 != pwd2) {
 
-
-
-// function onsubmit(e) {
-//     e.preventDefault();
-//     if(nombre.value=== ""|| email.value==="" || pwd1.value=== ""||
-//      pwd2.value==="") {
-//        console.log("Porfavor rellenar todo los campos") ;
-//     } else {
-//         msg.innerHTML="Exito";
-//     }
-//     setTimeout(function(){
-//         msg.innerHTML="";
-//     },3000);
-// }
+     }
+ }
