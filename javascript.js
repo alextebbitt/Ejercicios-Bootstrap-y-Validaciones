@@ -26,6 +26,11 @@ function enviarDatos() {
        msg.innerHTML= `<div class="alert alert-danger">
        <strong>Error!</strong> Contrasenas no coinciden.
      </div>`
+     } else if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myform.correo.value)) {
+         msg.innerHTML=  `<div class="alert alert-danger">
+         <strong>Error!</strong> Contrasenas no coinciden.
+       </div>`;
+       
      }
      setTimeout(function(){
          msg.innerHTML="";
