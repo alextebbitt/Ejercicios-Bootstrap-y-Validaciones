@@ -25,35 +25,30 @@
         </div>
     </nav>
     <title>Document</title>
+    
 
+    <form>
+      <div class="mb-3 mt-3">
+        <label for="nombre" class="form-label">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Introduce nombre" name="nombre">
+      </div>
+      <div class="mb-3 mt-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="correo" placeholder="Introduce email" name="correo">
+      </div>
+      <div class="mb-3">
+        <label for="pwd1" class="form-label">Contraseña:</label>
+        <input type="password" class="form-control" id="pwd1" placeholder="Introduce password" name="pwd1">
+      </div>
+      <div class="mb-3">
+        <label for="pwd2" class="form-label">Repite contraseña:</label>
+        <input type="password" class="form-control" id="pwd2" placeholder="Repite password" name="pwd2">
+      </div><br>      
+      <button type="submit" class="btn btn-primary" onClick="enviarDatos()">Submit</button>
+    </form> 
 
-  <h1>Formulario</h1>
-  <div style="margin: 20px">
-    <label for="fname">Nombre</label>
-    <input type="text" id="nombre" name="firstname" placeholder="Nombre" />
-  </div>
-  <div style="margin: 20px">
-    <label for="email"> Email </label>
-    <input
-      id="email"
-      type="email"
-      name="email"
-      placeholder="juangomez@gmail.com"
-      required
-    />
-  </div>
-  <div style="margin: 20px;">
-      <label for="exampleInputPassword1">Contraseña</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
-    </div>
-  </div>
-  <div style="margin: 20px;">
-    <label for="exampleInputPassword1">Repite la contraseña</label>
-    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Repite la contraseña">
-  </div>
+    <div id="usuariosPintados"></div>
 
-  <button id="btn" style="margin: 20px" type="submit">Submit</button>
-
-  <script src="./scripts/projectboostrap.js"></script>
+  <script src="./javascript.js"></script>
 </body>
 </html>
