@@ -1,19 +1,16 @@
-const msg = document.getElementById('usuariosPintados')
+
 
 
 function enviarDatos() {     
-    let usuarios = [] || JSON.parse(localStorage.getItem("user")); 
+    let usuarios = JSON.parse(localStorage.getItem("user")) || []; 
     let user = {
         nombre: nombre.value,
         correo: correo.value,
         contraseña1: pwd1.value,
         contraseña2: pwd2.value
     }
-    usuarios.push(user);
-    // console.log(usuarios)
-    localStorage.setItem("user", JSON.stringify(usuarios));
-    msg.innerHTML = 'correcto'    
-    // pintarUsuarios() 
+    usuarios.push(user);    
+    localStorage.setItem("user", JSON.stringify(usuarios));     
 }
 
 
