@@ -19,15 +19,13 @@
           </div>
           <ul class="nav navbar-nav">
             <!-- <li class="active"><a href="#">Home</a></li> -->
-            <li><a href="./singup.html">Crear usuario</a></li>            
-            <li><a href="./usercard.html">Usuarios guardados</a></li>                       
+            <li><a href="./singup.html">Crear usuario</a></li>                                
           </ul>
         </div>
     </nav>
-    <title>Document</title>
-    
+       
 
-    <form id="myform">
+    <form id="myform" class="col-lg-5">
       <div class="mb-3 mt-3">
         <label for="nombre" class="form-label">Nombre:</label>
         <input type="text" class="form-control" id="nombre" placeholder="Introduce nombre" name="nombre">
@@ -44,9 +42,12 @@
         <label for="pwd2" class="form-label">Repite contraseña:</label>
         <input type="password" class="form-control" id="pwd2" placeholder="Repite password" name="pwd2">
       </div><br>      
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">Submit</button><br><br>
+      <div id="alert"></div>
     </form> 
     <div id="alert"></div>
+
+    <div id="card"></div>
   <script src="./javascript.js"></script>
 </body>
 </html>
