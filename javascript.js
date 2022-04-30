@@ -17,20 +17,22 @@ function enviarDatos() {
 
  function onsubmit(e) {
      e.preventDefault();
-     if(nombre.value=== ""|| correo.value==="" || pwd1.value=== ""||
-      pwd2.value==="") {
+     if (nombre.value === ""|| correo.value === "" || pwd1.value === ""|| pwd2.value==="") {
         msg.innerHTML= `<div class="alert alert-warning">
         <strong>Cuidado</strong> Debes rellenar todos los campos.
-      </div>`;
-     } else if  (pwd1.value !== pwd2.value){
-       msg.innerHTML= `<div class="alert alert-danger">
-       <strong>Error!</strong> Contrasenas no coinciden.
-     </div>`
+        </div>`;
+     } else if (pwd1.value !== pwd2.value){
+        msg.innerHTML= `<div class="alert alert-danger">
+        <strong>Error!</strong> Contrasenas no coinciden.
+        </div>`
+     } else if (/(\w+?@\w+?\x2E.+)/.test(correo.value) !== true){
+        msg.innerHTML= `<div class="alert alert-danger">
+        <strong>Error!</strong> formato incorrecto.
+        </div>`
      }
      setTimeout(function(){
          msg.innerHTML="";
-     },3000);
-     
+     },3000);     
  }
 
  
