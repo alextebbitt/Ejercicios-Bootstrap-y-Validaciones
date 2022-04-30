@@ -22,9 +22,23 @@ function mostrarCarta() {
         <div class="card-body">
           <h4 class="card-title">${data[i].nombre}</h4>
           <p class="card-text">${data[i].correo}</p>
-          <a href="#" class="btn btn-primary">See Profile</a>
+          <button onClick="borrarUsuario('${data[i].correo}')" class="btn btn-primary">Borrar usuario</button>
         </div>`
     }
+}
+
+function borrarUsuario(x){
+    let newArray =[]
+    let data = JSON.parse(localStorage.getItem("user"));
+    for (let i = 0; i < data.length; i++) {
+        if (x !== data[i].correo ){
+            newArray.push(data[i])
+        }    
+    }   
+    console.log(newArray)
+    localStorage.setItem("user", JSON.stringify(newArray));
+    card.innerHTML = "";
+    mostrarCarta();    
 }
 
 
@@ -47,6 +61,7 @@ function onsubmit(e) {
     <strong>Correcto!</strong> usuario creado.
     </div>`
     enviarDatos();
+    card.innerHTML = "";
     mostrarCarta();
     }
     setTimeout(function(){
