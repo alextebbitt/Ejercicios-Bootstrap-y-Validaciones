@@ -19,7 +19,7 @@ _Este proyecto fue desarrollado con las siguientes tecnologías:_
 Para este proyecto tanto Alex como yo partimos de 0 conocimiento sobre la tecnología Bootstrap. Hemos creado un PowerPoint donde recogemos los aspectos principales
 de esta tecnología que hemos tenido que buscar y aprender.
 
-![Presentación PowerPoint Bootstrap](./assets/Bootstrap.pptx)
+![Presentación PowerPoint Bootstrap](https://docs.google.com/presentation/d/18IbkArO1o5hZ3qp97VThunrCfN2bNQS1779LMjqOsGU/edit?usp=sharing)
 
 ### Instalación y despliegue
 
