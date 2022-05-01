@@ -4,7 +4,9 @@ Ejercicios-Bootstrap-y-Validaciones
 
 ## Description
 
-Un párrafo detallado sobre su proyecto y una descripción general del uso.
+Este proyecto mostrará el trabajo que hemos estado haciendo en el almacenamiento de datos.
+
+
 
 ## Getting Started
 
@@ -42,4 +44,4 @@ Jorge & Alex
 
 ## License
 
-Este proyecto tiene la licencia [NOMBRE AQUÍ] - consulte el archivo LICENSE.md para obtener más información
+Este proyecto tiene la licencia Yorch82, AlexTebbitt - consulte el archivo LICENSE.md para obtener más información
