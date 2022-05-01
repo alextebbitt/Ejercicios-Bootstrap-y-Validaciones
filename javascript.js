@@ -17,7 +17,7 @@ function enviarDatos() {
 function mostrarCarta() {
     let data = JSON.parse(localStorage.getItem('user'));
     for (let i = 0; i < data.length; i++) {
-        card.innerHTML += `<div class="card" style="width:400px">
+        card.innerHTML += `<div class="card col" style="width:400px">
         <img class="card-img-top" src="./assets/hackerman.jpg" alt="Card image" style="width:75 %">
         <div class="card-body">
           <h4 class="card-title">${data[i].nombre}</h4>
@@ -50,15 +50,15 @@ function onsubmit(e) {
     </div>`;
     } else if (pwd1.value !== pwd2.value){
     msg.innerHTML= `<div class="alert alert-danger">
-    <strong>Error!</strong> Contrasenas no coinciden.
+    <strong>Error!</strong> Las contrasenas no coinciden.
     </div>`
     } else if (/(\w+?@\w+?\x2E.+)/.test(correo.value) !== true){
     msg.innerHTML= `<div class="alert alert-danger">
-    <strong>Error!</strong> formato incorrecto.
+    <strong>Error!</strong> Email con formato incorrecto.
     </div>`
      } else {
     msg.innerHTML= `<div class="alert alert-success">
-    <strong>Correcto!</strong> usuario creado.
+    <strong>Correcto!</strong> Usuario creado.
     </div>`
     enviarDatos();
     card.innerHTML = "";

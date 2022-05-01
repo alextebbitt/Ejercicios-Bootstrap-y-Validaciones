@@ -1,47 +1,45 @@
-# Project Title
+# Título
 
-Ejercicios-Bootstrap-y-Validaciones
+Ejercicios Bootstrap y Validaciones
 
-## Description
+## Descripción
 
-Este proyecto mostrará el trabajo que hemos estado haciendo en el almacenamiento de datos.
+Este proyecto es una página web con dos vistas en donde en la primera se recogen los datos de un usuario, se validan datos en base a determinadas reglas y
+psoteriormente se muestra en la segunda vista una tarjeta con los datos del usuario registrado pudiendo borrar individualmente los registros
 
+## Tecnologías
 
+_Este proyecto fue desarrollado con las siguientes tecnologías:_
 
-## Getting Started
+* HTML
+* CSS
+* JavaScript
+* Bootstrap 5
 
-### Dependencies
+### Instalación y despliegue
 
-Por este projecto tuvimos que usar bootstrap
-### Installing
-
-* Cómo/dónde descargar tu programa
-* Cualquier modificación necesaria para hacer a los archivos/carpetas
+Para desplegar este proyecto debes clonarte a través del siguiente link:
 
 ```
+https://github.com/alextebbitt/Ejercicios-Bootstrap-y-Validaciones.git
 
-### Executing program
-
-* Cómo ejecutar el programa
-* Viñetas paso a paso
 ```
-bloques de código para comandos
-```
+### Vista previa
 
-## Help
+![Validación para rellenar todos los campos del formulario](./assets/validacion%20rellenar%20todos%20los%20campos.png)
 
-Cualquier consejo para problemas o problemas comunes.
-```
-comando para ejecutar si el programa contiene información de ayuda
-```
+![Validación formato E-Mail](./assets/validacion%20formato%20email.png)
 
-## Authors
+![Validación contraseñas iguales](./assets/validacion%20contrase%C3%B1as%20iguales.png)
 
-Jorge & Alex
+![Validación registro usuario correcto](./assets/validacion%20correcta.png)
 
+![Tarjeta usuario registrado](./assets/creacion%20tarjeta%20usuario.png)
 
+## Autores
 
+Este proyecto  fue desarrollado por 
 
-## License
+[Jorge Campo](https://github.com/Yorch82)
+[Alex Tebbitt](https://github.com/alextebbitt)
 
-Este proyecto tiene la licencia Yorch82, AlexTebbitt - consulte el archivo LICENSE.md para obtener más información
